@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test html</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/electro.png" type="image/png">
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Inscription">Inscription</a></li>
+        <li><a href="#divers">Divers</a></li>
+        <li><a href="#produits">Nos produits</a></li>
+    </ul>
+    </nav>
+    <hr>
+    <form action="url" method="post">
+        <fieldset>
+            <legend>Step 1: Votre identité</legend>
+        <table>
+            <tr>
+                <td><label for="nom">Nom</label></td>
+                <td><input type="text" name="nom" placeholder="john_smith" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" placeholder="abc@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="tel">Téléphone</label></td>
+                <td><input type="tel" name="tel" placeholder="+1 202-303-404" pattern="+\[1-9]{3}[0-9]{3}[0-9]{3}" required></td>
+            </tr>
+        </table>
+            </fieldset>
+            <fieldset>
+                <legend>Step 2: Adresse de livraison</legend>
+                <table>
+                <tr>
+                    <td><label for="adresse">Addresse</label></td>
+                </tr>
+                <tr>
+                    <td><textarea name="adresse" id="adresse" cols="30" rows="5" placeholder="votre addresse..."></textarea></td>
+                </tr>
+                <tr>
+                    <td><Label>Code postal</Label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="code">2000
+                    <input type="checkbox" class="code">2002
+                    <input type="checkbox" class="code">3004
+                    <input type="checkbox" class="code">4005</td>
+                </tr>
+                </table>
+            </fieldset>
+                <fieldset>
+                    <legend>Step 3: Information CB</legend>
+                    <table>
+                    <tr>
+                        <td><label for="carte">Type de carte</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="carte" value="visa" class="carte" checked><img src="images/Logo-visa-icon-PNG.png" alt="visa" class="banque"> VISA</td>
+                        <td><input type="radio" name="carte" value="AmEx" class="carte"><img src="images/png-transparent-american-express-amex-charge-credit-card-payment-credit-cards-icon-thumbnail.png" alt="amex" class="banque"> AmEx</td>
+                        <td><input type="radio" name="carte" value="mastercard" class="carte"><img src="images/png-transparent-mastercard-logo-logo-payment-visa-mastercard-paypal-mastercard-icon-text-service-mobile-payment-thumbnail.png" alt="mastercard" class="banque"> Mastercard</td>
+                    </tr>
+                    <tr>
+                        <td><label for="num">N° de carte bancaire</label></td>
+                        <td><input type="number" name="num"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="code">Code de sécurité</label></td>
+                        <td><input type="number" name="num"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="porteur">Nom du porteur</label></td>
+                        <td><input type="text" name="porteur"></td>
+                    </tr>
+            </fieldset>
+        </table>
+         <button>J'ACHETE !</button>
+    </form>
+</body>
+</html>
